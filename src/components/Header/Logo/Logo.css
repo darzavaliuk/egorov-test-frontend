@@ -1,0 +1,151 @@
+.logo-wrapper {
+    display: flex;
+    width: 190px;
+    height: 60px;
+    margin: 60px auto auto;
+}
+
+@media (max-width: 788px) {
+    .logo-wrapper {
+        margin-top: 100px;
+        width: 190px;
+        height: 60px;
+    }
+
+    .logo-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-title {
+        display: flex;
+        flex-direction: column;
+        height: 47px;
+        margin-top: 6px;
+    }
+
+    .lead-image {
+        /*height: 33px !important;*/
+        width: 113px;
+    }
+
+    .advisors-image {
+        max-height: 9px;
+        min-height: 6px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+.logo-wrapper svg {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo-image {
+    min-height: 40px;
+    height: 60px;
+    margin: auto 16px auto auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    height: 47px;
+    margin-top: 6px;
+}
+
+.lead-image {
+    height: 33px;
+    min-height: 23px;
+}
+
+.advisors-image {
+    margin-top: 5px;
+    width: 80px;
+    height: 9px;
+    min-height: 6px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+div a {
+    display: flex;
+}
+
+@media (max-width: 360px) {
+    .logo-wrapper {
+        width: 128px;
+        height: 40px;
+    }
+
+    svg {
+        height: 23px;
+    }
+
+    svg.logo-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    svg.advisors-image {
+        height: 6px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .logo-image {
+        margin-right: 11px;
+        width: 40px;
+    }
+
+    .lead-image {
+        width: 77px;
+    }
+
+    .logo-title {
+        margin-top: 0;
+    }
+}
+
+.left-vector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 418px;
+    width: 468px;
+}
+
+.right-vector {
+    position: absolute;
+    height: 318px;
+    width: 278px;
+    top: 0;
+    left: auto;
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+    .left-vector {
+        width: 246px;
+        height: 208px;
+    }
+
+    .right-vector {
+        width: 251px;
+        height: 241px;
+    }
+}
+
+@media (max-width: 600px) {
+    .left-vector {
+        width: 174px;
+        height: 141px;
+    }
+
+    .right-vector {
+        width: 153px;
+        height: 150px;
+    }
+}
+

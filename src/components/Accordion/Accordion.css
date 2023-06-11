@@ -1,0 +1,606 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+.accoridion-panel {
+    margin: 0 auto;
+    max-width: 1680px;
+    min-height: 896px;
+
+}
+
+.accoridion-panel h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 104%;
+    /* identical to box height, or 75px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #162C4E;
+
+    opacity: 0.39;
+}
+
+.title-events {
+
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 104%;
+    /* identical to box height, or 75px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #162C4E;
+
+    opacity: 0.39;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: slide-in-from-top;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion-select {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-title {
+    position: relative;
+    font-family: 'SF Pro Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    /*border: 2px solid transparent;*/
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accordion-title span {
+    bottom: 40px;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    font-family: 'SF Pro Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.accordion-title p {
+    display: block;
+    width: 42px;
+    height: 40px;
+    font-family: 'SF Pro Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+}
+
+.accordion-content {
+    /*box-sizing: border-box;*/
+    overflow: auto;
+    position: relative;
+    transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Generated styles starts here */
+
+.accordion {
+    flex-direction: row;
+    height: 682px;
+}
+
+input {
+    border: none;
+}
+
+.accordion-title,
+.accordion-select {
+
+    display: block;
+    border-color: white;
+    /*border-radius: 0px;*/
+    border-style: solid;
+    border-width: 4px;
+    /*background-color: #162C4E;*/
+    background: linear-gradient(180deg, rgb(18, 18, 18, 0.75) 0%, #162C4E 100%), url("../../assets/party.jpg") center center no-repeat;
+    /*background: linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%);*/
+    /*background-blend-mode: darken;*/
+    color: #ffffff;
+    border-top: none;
+    border-right: 0;
+    width: 93px;
+    height: 100%;
+    font-size: 15px;
+    /*border: none;*/
+    box-sizing: border-box;
+    border-bottom: 2px solid #DF2224;
+    /*border-bottom: 2px solid #DF2224;*/
+}
+
+.accordion-select {
+    margin-bottom: -93px;
+    margin-right: -93px;
+    border-bottom: 2px solid #DF2224;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    /*border-bottom-color: #DF2224;*/
+    /*border-right-color: white;*/
+}
+
+
+.accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    background: #162C4E;
+}
+
+.accordion-title span {
+    transform: rotate(-90deg);
+    -ms-writing-mode: lr-bt;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    padding-bottom: 43px;
+    padding-top: 43px;
+    line-height: 93px;
+}
+
+.accordion-content {
+    border-bottom: 2px solid #DF2224;
+    background-color: white;
+    color: white;
+    height: 682px;
+    margin-bottom: 0;
+    margin-right: calc(-1 * calc(100% - 680px));
+    padding: 0px;
+    width: calc(100% - 680px);
+    /*border-color: white;*/
+    border-radius: 0px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+}
+
+.panel-title {
+    position: absolute;
+    top: 0;
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(20px);
+    width: 364px;
+    height: 100%;
+}
+
+.panel-title p {
+    position: absolute;
+    width: 405px;
+    height: 380px;
+    left: -143px;
+    top: -38px;
+
+    font-family: 'SF Pro Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 380px;
+    line-height: 100%;
+    /* identical to box height, or 380px */
+
+    text-align: right;
+    letter-spacing: -0.03em;
+
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.panel-title h2 {
+    position: absolute;
+    /*width: 180px;*/
+    height: 29px;
+    left: 41px;
+    top: 478px;
+
+    /* H3 */
+
+    font-family: 'SF Pro Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+
+    /* White */
+
+    color: #FFFFFF;
+
+}
+
+.panel-title h3 {
+    position: absolute;
+    width: 365px;
+    height: 27px;
+    left: 41px;
+    top: 519px;
+
+    /* T1 Reg (18 px) */
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.panel-title button {
+    position: absolute;
+    left: 41px;
+    top: 571px;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-left: 8px solid rgba(255, 255, 255, 0.8);
+    width: 256px;
+    height: 62px;
+    font-family: 'SF Pro Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.panel-title button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .flex-box input {
+        margin: 8px auto 10px 20px;
+    }
+
+    .accoridion-panel h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 104%;
+        /* or 37px */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #162C4E;
+
+        opacity: 0.39;
+        margin-top: 46px;
+    }
+
+    .accordion {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .accordion-title,
+    .accordion-select {
+        background: linear-gradient(270deg, rgb(18, 18, 18, 0.75) 0%, #162C4E 100%), url("../../assets/party.jpg") center center no-repeat;
+        border-left: none;
+        border-top: 2px solid white;;
+    }
+
+    .accordion-title {
+        height: 93px;
+        width: 100%;
+    }
+
+    .accordion-select {
+        width: 100%;
+        height: 93px;
+    }
+
+    .accordion-title:not(:nth-last-child(2))::after {
+        border-bottom-color: rgb(182, 42, 42);
+        border-right-color: transparent;
+    }
+
+
+    .accordion-title span {
+        transform: rotate(0deg);
+        -ms-writing-mode: lr-tb;
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        padding-left: 43px;
+        padding-right: 43px;
+        line-height: 93px;
+    }
+
+    .accordion-content {
+        height: 460px;
+        margin-bottom: -460px;
+        margin-right: 0;
+        padding: 0px;
+        width: 100%;
+        /*border-right: 2px solid white;;*/
+        /*margin-top: -85px;*/
+    }
+
+    .panel-title {
+        position: absolute;
+        width: 100%;
+        height: 192px;
+        left: 0px;
+        top: 268px;
+
+        background: rgba(18, 18, 18, 0.8);
+        backdrop-filter: blur(20px);
+    }
+
+    .accordion-title span {
+        bottom: -15px;
+        left: 40px;
+        font-family: 'SF Pro Display', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        /* identical to box height, or 24px */
+        /* White */
+        color: #FFFFFF;
+    }
+
+    .accordion-title p {
+        font-family: 'SF Pro Display', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 100%;
+        /* identical to box height, or 32px */
+
+        text-align: right;
+        letter-spacing: -0.03em;
+
+        color: #FFFFFF;
+    }
+
+    .panel-title h2 {
+        top: 25px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        /* identical to box height, or 22px */
+
+
+        /* White */
+
+        color: #FFFFFF;
+    }
+
+    .panel-title p {
+        right: -80px;
+        left: auto;
+
+    }
+
+    .panel-title h3 {
+        top: 55px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+
+
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .panel-title button {
+        top: 108px;
+        width: 169px;
+        height: 44px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+
+
+        /* Surface */
+
+        color: #FFFFFF;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+
+    .accoridion-panel {
+        width: 320px;
+    }
+
+    .accordion-content {
+        height: 376px;
+        margin-bottom: -376px;
+        margin-right: 0;
+        padding: 0px;
+        width: 100%;
+        /*margin-top: -85px;*/
+    }
+
+    .panel img {
+        width: 320px;
+    }
+
+    .panel-title {
+        position: absolute;
+        width: 100%;
+        height: 158px;
+        left: 0px;
+        top: 218px;
+        width: 320px;
+        background: rgba(18, 18, 18, 0.8);
+        backdrop-filter: blur(20px);
+    }
+
+    .accordion-title span {
+        bottom: -8px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        /* identical to box height, or 18px */
+
+
+        /* White */
+
+        color: #FFFFFF;
+    }
+
+    .accordion-title p {
+        left: 20px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        /* identical to box height, or 24px */
+
+        text-align: right;
+        letter-spacing: -0.03em;
+
+        color: #FFFFFF;
+    }
+
+    .panel-title h2 {
+        top: 24px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+
+
+        /* White */
+
+        color: #FFFFFF;
+    }
+
+    .panel-title p {
+        top: 10px;
+        right: -20px;
+        left: auto;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 100%;
+        /* identical to box height, or 80px */
+
+        text-align: right;
+        letter-spacing: -0.03em;
+
+        color: rgba(255, 255, 255, 0.04);
+    }
+
+    .panel-title h3 {
+        top: 51px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+
+
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .panel-title button {
+        top: 94px;
+        width: 169px;
+        height: 44px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+
+
+        /* Surface */
+
+        color: #FFFFFF;
+    }
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate.visible {
+    opacity: 0.39;
+    transform: translateY(0);
+}
+
+.title-events.animate {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.title-events.visible {
+    opacity: 0.39;
+    transform: translateY(0);
+}
+

@@ -1,0 +1,50 @@
+.event-section-wrapper {
+    margin-top: 72px;
+}
+
+.event-section-wrapper h3 {
+    min-width: 300px;
+}
+
+.event-section-button {
+    background: #1D4169;
+    border-radius: 40px;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.event-section-button h2 {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-left: 28px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.event-section-button svg {
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.event-section-button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 788px){
+    .event-section-wrapper {
+        margin-top: 40px;
+        margin-bottom: 76px;
+    }
+}

@@ -1,0 +1,11 @@
+.roller-style {
+    position: absolute;
+    z-index: 9999;
+    top: 50vh;
+    height: 100%;
+    left: calc((100% - 70px ) / 2);
+}
+
+.flex-box button:hover {
+    cursor: pointer;
+}
